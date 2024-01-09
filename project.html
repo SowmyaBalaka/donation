@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        .nav{
+            display: flex;
+            align-items: center;
+            /* justify-content: flex-end; */
+            gap: 10px;
+            background-color: rgb(87, 198, 119);
+            position: sticky;
+            top: 0;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            font-size: 12px;
+        }
+        nav a:hover{
+            color: black;
+        }
+        .icon{
+            display: flex;
+            align-items: flex-end;
+            margin-right: 320px;
+            margin-left: 10px;
+        }
+        .icon-img{
+            /* width: 100%;
+            height: 100%; */
+            object-fit: cover;
+        }
+        .logo-name{
+            font-family: 'Dancing Script', cursive;
+            color: aliceblue;
+            font-size: 24px;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* position: relative; */
+        }
+        .main-page-div{
+            margin-bottom: 20px;
+        }
+        .main-page{
+            width: 100%;
+            height: 400px;
+            margin-top: 15px;
+        }
+        .img-main{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 20px 0px;
+            /* position: relative; */
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        /* .main-content{
+            position: absolute;
+            bottom: 0;
+            margin: 100px;
+            color: white;
+        }
+        .main-btn{
+            border: none;
+            background-color: rgba(95, 198, 122, 0.721);
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            cursor: pointer;
+        } */
+        h3{
+            text-align: center;
+            font-size: 30px;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        .types{
+            margin: 0px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card-type{
+            border: 1px solid rgb(95, 198, 122);
+            width: 200px;
+            margin: 20px;
+            padding: 12px;
+            border-radius: 12px;
+            
+        }
+        .card-img{
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 6px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .card-btn{
+            width: 100%;
+            border: none;
+            padding: 8px;
+            color: white;
+            background-color: rgb(95, 198, 122);
+            border-radius: 6px;
+        }
+        .dropdown:focus{
+            border: none;
+        }
+        h2{
+            color:rgba(45, 106, 75, 0.676);
+            text-align: center;
+        }
+        .image{
+            height: 300px;
+        }
+        .img-end{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 35px;
+            /* position: relative; */
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+        <div class="icon">
+            <a href=""><svg class="icon-img" xmlns="http://www.w3.org/2000/svg" width="32px" color="rgba(255, 0, 0, 0.676)" height="32px" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z"/>
+                <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z"/>
+              </svg></a>
+            <p class="logo-name">Mitra</p>
+        </div>
+        <a href="./home.html">Home</a>
+        <a href="">AboutUs</a>
+        <a href="">ContactUs</a>
+        <div class="dropdown">
+            <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Donate
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-success" href="https://www.redcrossblood.org/donate-blood/blood-donation-process/donation-process-overview.html">Donate blood</a></li>
+              <li><a class="dropdown-item text-success" href="https://apkcarefoundation.in/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxZkpeZ0ZMCZV0PF-OR-0eVpbOs8jnEXlJsCyEM3-jZ1XRQXkPgHh3RoCi7UQAvD_BwE">Donate kidney</a></li>
+              <li><a class="dropdown-item text-success" href="https://www.ketto.org/cause/medical-fundraising?utm_source=external_Ketto&utm_medium=google-search&utm_campaign=S14_4000_SALE_Fundraising_KY_ALL_CLK_IND&utm_term=p_fundraising%20websites&utm_content=medical_resp_ad2_new&utm_placement=KT17_AG_1865_Fundraising_Generic&gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxUP-GlyAnIcFWdquHrF_Rwo-xFo42TjvCbgkwPzp7D3vHzg9J6-R-RoChwMQAvD_BwE">Donate Money</a></li>
+              <li><a class="dropdown-item text-success" href="https://www.wfp.org/support-us/stories/food-assistance?utm_source=google&utm_medium=cpc&utm_campaign=12704016913&utm_content=156693448234&gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxX_hvzWnQwt5wcUp49gNO7FEkzQ5ilw_D0tYEjOKxglJauPxUqhWExoCLxgQAvD_BwE&gclsrc=aw.ds">Donate Clothes</a></li>
+              <li><a class="dropdown-item text-success" href="https://apkcarefoundation.in/?gclid=CjwKCAiAqNSsBhAvEiwAn_tmxZkpeZ0ZMCZV0PF-OR-0eVpbOs8jnEXlJsCyEM3-jZ1XRQXkPgHh3RoCi7UQAvD_BwE">Donate Food</a></li>
+            </ul>
+        </div>
+        <a href="./loginform.html">SignIn</a>
+    </nav>
+
+    <img class="img-main"  src="https://www.dublinfoundation.org/wp-content/uploads/2021/08/DCF-Donating-in-your-community.png" alt="">
+    
+    
+    <h3>Types of Donation</h3>
+    <div class="types">
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2023-05/Blood-Donation-Bag-Connected-to-Heart-Shape_Stock-Illustration.jpg?h=9fb2ff0c&itok=h-HPhN-6" alt="">
+            <p>Blood donation saves lives, replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand,volunteer-based, altruistic, selfless, life-changing, give life by donate, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://media.istockphoto.com/id/1333790678/photo/close-up-of-a-young-woman-carrying-a-box-of-food-donations.jpg?s=612x612&w=0&k=20&c=FMOgOCqFCCnLwz1WX_fxnxz8PqPtAtZhqyRXVeQ1RME=" alt="">
+            <p>Blood donation saves lives, replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://assets.lybrate.com/q_auto,f_auto,w_1200/eagle/uploads/32d9699bc65e483234643dfbc6315da9/83d191.jpg" alt="">
+            <p>Blood donation saves lives, replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+    </div>
+
+    <div class="types">
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://www.stor-it.com/wp-content/uploads/How-to-donate-clothes.jpg" alt="">
+            <p>Blood donation saves lives, replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand,volunteer-based, altruistic, selfless, life-changing, give life by donate, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://www.dragarwal.com/wp-content/uploads/2022/08/landing-mobile-version-form.jpg" alt="">
+            <p>Blood donation saves lives, replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+
+        <div class="card-type">
+            <!-- <p>Blood Donation</p> -->
+            <img class="card-img" src="https://img.freepik.com/premium-photo/child-adult-holding-money-jar-donation-saving-concept_49149-1117.jpg" alt="">
+            <p>Blood donation saves lives,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, dignissimos? replenishes supply, vital for emergencies, volunteer-based, altruistic, selfless, life-changing, precious gift, medical support, continuous demand, humanitarian act, sustainable healthcare.</p>
+            <button class="card-btn">Donate</button>
+        </div>
+    </div>
+    <!-- Coursel -->
+    <div class="container">
+        <h2>Important Updates of Donation</h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+    <!-- https://images.news18.com/ibnlive/uploads/2022/11/heart-donated.jpg -->
+    <!-- <img src="https://akm-img-a-in.tosshub.com/businesstoday/styles/medium_crop_simple/public/images/story/202210/donation-gfx.jpg?itok=_RCRJV97" class="d-block w-100" alt="..."> -->
+    <!-- <img src="https://unos.org/wp-content/uploads/2020-numbers-700x394-2.png" class="d-block w-100" alt="..."> -->
+
+              <img src="https://images.news18.com/ibnlive/uploads/2022/11/heart-donated.jpg" alt="Los Angeles" style="width:100%;height: 400px;">
+            </div>
+      
+            <div class="item">
+              <img src="https://akm-img-a-in.tosshub.com/businesstoday/styles/medium_crop_simple/public/images/story/202210/donation-gfx.jpg?itok=_RCRJV97" alt="Chicago" style="width:100%;height: 400px;">">
+            </div>
+          
+            <div class="item">
+              <img src="https://unos.org/wp-content/uploads/2020-numbers-700x394-2.png" alt="New york" style="width:100%;height: 400px;">">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <img class="img-end" src="https://www.causevox.com/wp-content/uploads/2022/06/image6-1040x603.png" alt="">
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

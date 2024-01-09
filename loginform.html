@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{text-align: center;}
+        body{
+            background-color: rgb(163, 238, 167);
+        }
+        .form{
+            width: 450px;
+            margin: auto;
+            font-size: 20px;
+            padding: 12px;
+            
+        }
+        input,label{
+            width: 100%;
+        }
+        
+        input{
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .gender{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .submit{
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h1>Student Registration form</h1>
+   <form action="" class="form">
+    <label for="">Enter Name of the User:</label>
+    <input type="text" name="name" placeholder="Mark Zuker Burg"><br><br>
+    <label for="">Password:</label>
+    <input type="password" placeholder="******"><br><br>
+    <label for="">Date of Birth:</label>
+    <input type="date"><br><br>
+    <div class="gender">
+        <label for="">Gender</label>
+        <input type="radio" name="g">
+        <label for="">Female</label>
+        <input type="radio" name="g">
+        <label for="">Male</label><br><br>
+    </div>
+    <label for="">Mobile number</label>
+    <input type="text" name="Mobile" pattern="[0-9]{10}"><br><br>
+    <div class="gender">
+        <label for="">Language</label>
+        <input type="checkbox" name="telugu">
+        <label for="">Telugu</label> 
+        <input type="checkbox" name="English">
+        <label for="">English</label>
+        <input type="checkbox" name="hindi">
+        <label for="">Hindi</label><br><br>
+    </div>
+    <!-- https://images.news18.com/ibnlive/uploads/2022/11/heart-donated.jpg -->
+    <!-- <img src="https://akm-img-a-in.tosshub.com/businesstoday/styles/medium_crop_simple/public/images/story/202210/donation-gfx.jpg?itok=_RCRJV97" class="d-block w-100" alt="..."> -->
+    <!-- <img src="https://unos.org/wp-content/uploads/2020-numbers-700x394-2.png" class="d-block w-100" alt="..."> -->
+
+    
+    <input type="submit" value="Login" class="submit">  
+    </form> 
+</body>
+</html>
